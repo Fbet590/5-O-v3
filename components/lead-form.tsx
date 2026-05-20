@@ -269,24 +269,14 @@ export function LeadForm() {
         budgetFlexibility: formData.budgetFlexibility,
       }
 
-      // Send to both webhooks in parallel
-      await Promise.allSettled([
-        fetch(
-          "https://services.leadconnectorhq.com/hooks/ESXofJNHbRPkOF25Yiyj/webhook-trigger/Wg87a8lNfjfHzR7TOaph",
-          {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(payload),
-          }
-        ),
-        fetch(
-          "https://hooks.zapier.com/hooks/catch/24750736/4yub4pj/",
-          {
-            method: "POST",
-            body: JSON.stringify(payload),
-          }
-        ),
-      ])
+      // Send to Zapier webhook
+      await fetch(
+        "https://hooks.zapier.com/hooks/catch/24750736/4yub4pj/",
+        {
+          method: "POST",
+          body: JSON.stringify(payload),
+        }
+      )
       // Fire Facebook Lead conversion event
       if (typeof window !== "undefined" && typeof window.fbq === "function") {
         window.fbq("track", "Lead", {
