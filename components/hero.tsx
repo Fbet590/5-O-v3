@@ -21,32 +21,22 @@ export function Hero() {
             Premium Outdoor Solutions
           </p>
           <h1 className="font-serif font-black text-5xl leading-tight tracking-tight text-primary-foreground sm:text-6xl lg:text-7xl text-balance">
-            $10K. More Turf. More Pavers.{" "}
+            $10K.{" "}
             <span className="relative inline-block">
-              More Outdoor Space.
-              <svg 
-                className="absolute -bottom-2 left-0 w-full h-4 sm:h-5" 
-                viewBox="0 0 200 12" 
-                fill="none" 
-                preserveAspectRatio="none"
-              >
-                <path 
-                  d="M2 8C20 4 40 10 60 6C80 2 100 10 120 5C140 1 160 9 180 4C190 2 198 6 198 6" 
-                  stroke="url(#underlineGradient)" 
-                  strokeWidth="6" 
-                  strokeLinecap="round"
-                  className="drop-shadow-lg"
-                />
-                <defs>
-                  <linearGradient id="underlineGradient" x1="0%" y1="0%" x2="100%" y2="0%">
-                    <stop offset="0%" stopColor="#4ade80" />
-                    <stop offset="50%" stopColor="#22c55e" />
-                    <stop offset="100%" stopColor="#16a34a" />
-                  </linearGradient>
-                </defs>
-              </svg>
+              More
+              <span className="absolute -bottom-1 left-0 w-full h-3 bg-yellow-400 -z-10 sm:h-4 rounded-sm" />
             </span>{" "}
-            Done.
+            Turf.{" "}
+            <span className="relative inline-block">
+              More
+              <span className="absolute -bottom-1 left-0 w-full h-3 bg-yellow-400 -z-10 sm:h-4 rounded-sm" />
+            </span>{" "}
+            Pavers.{" "}
+            <span className="relative inline-block">
+              More
+              <span className="absolute -bottom-1 left-0 w-full h-3 bg-yellow-400 -z-10 sm:h-4 rounded-sm" />
+            </span>{" "}
+            Outdoor Space. Done.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-primary-foreground/90 max-w-xl">
             We handle everything from design to install — you just enjoy the result.
