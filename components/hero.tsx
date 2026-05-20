@@ -21,7 +21,12 @@ export function Hero() {
             Premium Outdoor Solutions
           </p>
           <h1 className="font-serif font-black text-5xl leading-tight tracking-tight text-primary-foreground sm:text-6xl lg:text-7xl text-balance">
-            $10K. More Turf. More Pavers. More Outdoor Space. Done.
+            $10K. More Turf. More Pavers.{" "}
+            <span className="relative inline-block">
+              More Outdoor Space.
+              <span className="absolute -bottom-1 left-0 w-full h-2 bg-primary/80 -z-10 sm:h-3" />
+            </span>{" "}
+            Done.
           </h1>
           <p className="mt-6 text-lg leading-relaxed text-primary-foreground/90 max-w-xl">
             We handle everything from design to install — you just enjoy the result.
